@@ -54,3 +54,20 @@ Individual contribution (based on peer review from the members of your team whic
 Alternate Projects
 
 If you are interested in building a different AI application, please discuss with the course instructor.
+
+### Installation
+Using Chatterbot version 1.0.5 and resolve any dependencies
+
+Requires Python Version 3.7 or lower
+Chatterbot 1.0.5
+chatterbot_corpus
+
+PIP Install
+------------
+python -m pip install chatterbot==1.0.5
+python -m pip install chatterbot_corpus
+(install any other required libraries: Spacy)
+
+Run Test
+------------
+python ExampleBot.py
