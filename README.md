@@ -1,7 +1,7 @@
 # CPME-252-Project
 This is a group assignment, where you will be part of a team of 3 and create an AI application.  
 
-#Forming a Team
+### Forming a Team
 
 Please form a team of 3 students and add the names of all team members under "Project Teams" on Canvas by January 14.  If you do not have a team by that time, I will assign you to a team.  
 
@@ -33,7 +33,7 @@ You are welcome to use other platforms.  Please run your choice by the course in
 ### Deliverables
 
 
-#Presentation on March 11, 2020 in class
+#### Presentation on March 11, 2020 in class
 5 minutes per person (max 15 minutes total per team) + 5 minutes of Q&A
 You need to cover at least the following:
 Motivation for your choice of application
