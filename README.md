@@ -65,7 +65,9 @@ chatterbot_corpus
 PIP Install
 ------------
 python -m pip install chatterbot==1.0.5
+
 python -m pip install chatterbot_corpus
+
 (install any other required libraries: Spacy)
 
 Run Test
