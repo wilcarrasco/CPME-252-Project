@@ -13,22 +13,21 @@ for _file in os.listdir(path):
     chats = open(path+"/" + _file, 'r').readlines()
     trainer.train(chats)
 
-
-def string_contain(str1):
-    multiple_inputs_dict = ['and','And','also','Also']
-    for word in multiple_inputs_dict:
-        if word in str1:
-            return str1.split(word)
-    return str1
-
+print("Bot: To process your request. Just press enter with no characters after inputting your request")
 while True:
     try:
-        request = input("You: ")
-        query = string_contain(request)
+        userTurn = 1
+        query = []
+        while (userTurn == 1):
+            line = input("You: ")
+            if line:
+                query.append(line)
+            else:
+                userTurn = 0
         for userInput in query:
-            userInput = userInput.strip()
             response = bot.get_response(userInput)
-            print('Bot: ', response)
-    # press ctrl-c or ctrl-d on keyboard to exit
+            print('Bot: ',response)
+        userTurn = 1
     except(KeyboardInterrupt, EOFError, SystemExit):
         break
+
