@@ -5,7 +5,8 @@ import os
 import sys
 
 
-path = "c:/Users/VenEn/OneDrive/Desktop/python/.vscode/workspace_cmpe252/chatterbot/txt"
+#Path pulls current directory and adds txt folder
+path = os.getcwd()+"/txt"
 bot = ChatBot('FRiDAY', logic_adapter = ["chatterbot.logic.BestMatch"])
 trainer = ListTrainer(bot)
 
