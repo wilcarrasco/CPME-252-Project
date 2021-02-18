@@ -6,15 +6,18 @@ import sys
 
 
 #Path pulls current directory and adds txt folder
-path = os.getcwd()+"/txt"
-bot = ChatBot('FRiDAY', logic_adapter = ["chatterbot.logic.BestMatch"])
+pwd = os.getcwd()
+path = os.path.join(pwd, "txt")
+bot = ChatBot('Help Desk', read_only=True, logic_adapter = ["chatterbot.logic.BestMatch"])
 trainer = ListTrainer(bot)
 
-for _file in os.listdir(path):
-    chats = open(path+"/" + _file, 'r').readlines()
+for file in os.listdir(path):
+    with open(os.path.join(path, file), 'r') as f:
+        chats = f.read().splitlines() 
     trainer.train(chats)
 
-print("Bot: To process your request. Just press enter with no characters after inputting your request")
+print("Help Desk: To process your request. Just press enter with no characters after inputting your request")
+print('Help Desk: If you need help reseting your password type "I need help resetting my password"')
 while True:
     try:
         userTurn = 1
@@ -27,7 +30,7 @@ while True:
                 userTurn = 0
         for userInput in query:
             response = bot.get_response(userInput)
-            print('Bot: ',response)
+            print('Help Desk: ',response)
         userTurn = 1
     except(KeyboardInterrupt, EOFError, SystemExit):
         break
