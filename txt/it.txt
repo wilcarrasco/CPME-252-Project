@@ -1,6 +1,6 @@
 Can I get some help?
 Of course, what do you need help with?
-I need help resetting my password.
-Ok, a link will be sent to your email with instructions on how to reset your password.
 I cannot login to my account.
 Are you locked out your account or forgot your password?
+I must have forgotten my password
+To reset you password type: "I need help resetting my password"
