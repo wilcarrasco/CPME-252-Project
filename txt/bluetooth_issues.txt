@@ -1,0 +1,6 @@
+I am having issues connecting to bluetooth
+I'm sorry hear that, is your bluetooth adapter powered on?
+Yes my bluetooth adapter is on
+Please disable and enable your bluetooth device, and try to reconnect
+yes that fixed it
+Great! Is there anything else you need help with?
