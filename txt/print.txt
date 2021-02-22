@@ -1,0 +1,6 @@
+I need to print
+I will connect you to the local shared printer
+I can't find my printer
+I will email you some suggestions on the best printer in your proximity
+Please print 
+I will forward a print request for you and establish a printer connection on your behalf.

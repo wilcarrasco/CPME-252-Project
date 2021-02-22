@@ -1,0 +1,4 @@
+My software has a bug
+Software bugs can be problemsome. I will submit a ticket to our development team to have them take a look at it.
+bug
+We work hard to ensure all bugs are removed; but there can always be one. A ticket has been submitted.
