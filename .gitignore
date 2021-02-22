@@ -130,6 +130,7 @@ dmypy.json
 
 # VS Code
 .vscode
+.code-workspace
 
 # Chatterbot files
 sentence_tokenizer.pickle
