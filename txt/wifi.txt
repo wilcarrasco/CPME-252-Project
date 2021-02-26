@@ -1,2 +1,6 @@
 Wifi is slow
 I'm sorry; slow internet speeds slow me down. Call your Internet service provider for more assistance. 
+game lag
+Game lag is caused by slower internet connections. Try restarting you router and modem.
+Wi-fi
+I'm sorry; slow internet speeds slow me down. Try restarting you router and modem.
