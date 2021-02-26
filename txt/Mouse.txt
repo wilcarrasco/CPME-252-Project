@@ -1,0 +1,6 @@
+My mouse stopped working
+Microsoft just released an update that compromised wired mouse functionality. Upgrade to wireless.
+Mouse broken
+Have you unplugged the USB cable?
+Yes
+Attempt to reboot the device. This always helps me.

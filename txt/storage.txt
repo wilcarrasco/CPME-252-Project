@@ -1,0 +1,6 @@
+I am out of storage
+I will review your saved files and data and provide recommendations.
+Storage 
+If you are short on storage, I will review your saved files and data and provide recommendations.
+Low storage
+I am able to review your saved files and data and provide recommendations.

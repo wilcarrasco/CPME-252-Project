@@ -1,0 +1,4 @@
+my cd burner isn't working
+Check to see if the cd is already written to. A hardware issue may be present though; I will submit a ticket
+my cd reader isn't working
+check to see if the cd is in bad condition; often these wear out. However, I will prepare a ticket to submit.

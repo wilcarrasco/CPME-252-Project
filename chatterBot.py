@@ -17,7 +17,24 @@ ISSUES = [
     'update',
     'updating',
     'software',
-    'blue screen']
+    'blue screen',
+    'cyber',
+    'mouse',
+    'keyboard',
+    'delete',
+    'deleted',
+    'print',
+    'printer',
+    'storage',
+    'restart',
+    'wifi',
+    'wi-fi',
+    'coffee',
+    'spilt',
+    'share',
+    'share drive',
+    'website',
+    'cd']
 
 END_RESPONSE = [
     "Ok an automatically generating ticket will be printed, have a great day!",
