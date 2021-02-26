@@ -1,4 +1,25 @@
-# CPME-252-Project
+### Installation criteria
+Using Chatterbot version 1.0.5 and resolve any dependencies
+
+Requires Python Version 3.7 or lower
+Chatterbot 1.0.5
+chatterbot_corpus
+
+PIP Install
+------------
+python -m pip install chatterbot==1.0.5
+
+python -m pip install chatterbot_corpus
+
+(install any other required libraries: Spacy)
+
+Run Test
+------------
+python ExampleBot.py
+
+
+
+# Assignment details: CPME-252-Project
 This is a group assignment, where you will be part of a team of 3 and create an AI application.  
 
 ### Forming a Team
@@ -55,21 +76,3 @@ Alternate Projects
 
 If you are interested in building a different AI application, please discuss with the course instructor.
 
-### Installation
-Using Chatterbot version 1.0.5 and resolve any dependencies
-
-Requires Python Version 3.7 or lower
-Chatterbot 1.0.5
-chatterbot_corpus
-
-PIP Install
-------------
-python -m pip install chatterbot==1.0.5
-
-python -m pip install chatterbot_corpus
-
-(install any other required libraries: Spacy)
-
-Run Test
-------------
-python ExampleBot.py
