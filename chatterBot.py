@@ -4,6 +4,7 @@ from chatterbot.trainers import ChatterBotCorpusTrainer
 import os
 import sys
 import time
+import sendEmail
 
 ISSUES = [
     'computer',
@@ -88,6 +89,7 @@ def main():
     ### This file should be located where your python exe file is. This will save the conversation that occurs
     SAVE_FILE = open("saveInfo.txt","w")
     SAVE_FILE.truncate(0)
+    userEmail = input("Please provide your email: ")
     print("Help Desk: To process your request. Just press enter with no characters after inputting your request")
     print("Help Desk: To end the conversation press CTRL+C")
     print('Help Desk: If you need help reseting your password type "I need help resetting my password"')
@@ -111,10 +113,12 @@ def main():
                     time.sleep(2)
                     SAVE_FILE.close()
                     print_ticket()
+                    sendEmail.transcriptSend(str(userEmail))
             user_turn = 1
         except(KeyboardInterrupt, EOFError, SystemExit):
             SAVE_FILE.close()
             print_ticket()
+            sendEmail.transcriptSend(str(userEmail))
             break
 
 if __name__ == '__main__':
