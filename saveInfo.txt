@@ -1,0 +1,32 @@
+You:  Bug
+Help Desk: We work hard to ensure all bugs are removed; but there can always be one. A ticket has been submitted.
+You: reset
+Help Desk: Hello
+You: slow
+Help Desk: A system administrator may be able to provide a tech refresh; what is your device's name? I will submit a ticket.
+You: software update
+Help Desk: Do you have any brothers
+You: no
+Help Desk: Hello
+You: blue screen
+Help Desk: Yes! Let me know the name of the files and locations and I will send you an email when completed.
+You: blue screen of death
+Help Desk: I'm sorry; I am unable to help in such matters. The bluescreen is something I fear as well.
+You: mouse is broken
+Help Desk: What can you eat
+You: spilt
+Help Desk: Are you a programmer?
+You: storage
+Help Desk: If you are short on storage, I will review your saved files and data and provide recommendations.
+You: yes
+Help Desk: Attempt to reboot the device. This always helps me.
+You: ok
+Help Desk: What else is delicious?
+You: ok
+Help Desk: What else is delicious?
+You: ok
+Help Desk: What else is delicious?
+You: I love you
+Help Desk: My computer keeps restarting itself
+You: restarting
+Help Desk: check to see if the cd is in bad condition; often these wear out. However, I will prepare a ticket to submit.
