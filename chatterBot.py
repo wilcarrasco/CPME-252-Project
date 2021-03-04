@@ -1,8 +1,6 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
-from chatterbot.trainers import ChatterBotCorpusTrainer
 import os
-import sys
 import time
 import sendEmail
 
@@ -48,12 +46,31 @@ def train_bot():
     #Path pulls current directory and adds txt folder
     pwd = os.getcwd()
     path = os.path.join(pwd, "txt")
-    bot = ChatBot('Help Desk', read_only=True, logic_adapter = ["chatterbot.logic.BestMatch"])
+    bot = ChatBot(
+        'Help Desk',
+        read_only=True, 
+        preprocessors=[
+        'chatterbot.preprocessors.clean_whitespace'
+        ],
+        storage_adapter='chatterbot.storage.SQLStorageAdapter',
+        logic_adapters = [
+            {
+                'import_path': 'custom_logic.HelpResponse',
+            },
+            {
+                'import_path':'chatterbot.logic.BestMatch',
+                "statement_comparison_function": 'chatterbot.comparisons.LevenshteinDistance',
+                'default_response': 'I am sorry, I do not understand. For items I am most helpful with, enter: help',
+                'maximum_similarity_threshold': 0.80
+            }
+        ]
+    )
     trainer = ListTrainer(bot)
 
     for file in os.listdir(path):
         with open(os.path.join(path, file), 'r') as f:
-            chats = f.read().splitlines() 
+            #converts all training files to lower case
+            chats = f.read().lower().splitlines()
         trainer.train(chats)
     return bot
 
@@ -92,13 +109,14 @@ def main():
     userEmail = input("Please provide your email: ")
     print("Help Desk: To process your request. Just press enter with no characters after inputting your request")
     print("Help Desk: To end the conversation press CTRL+C")
-    print('Help Desk: If you need help reseting your password type "I need help resetting my password"')
+    print('Help Desk: For a list of top items, enter: help')
     while helping:
         try:
             user_turn = 1
             query = []
             while (user_turn == 1):
-                line = input("You: ")
+                #converts user input to lower
+                line = input("You: ").lower()
                 if line:
                     SAVE_FILE.write('You: {}\n'.format(line))
                     query.append(line)
