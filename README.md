@@ -18,6 +18,12 @@ Run Test
 python ExampleBot.py
 
 
+Google Drive
+-------------
+Projectg Slides:
+
+https://docs.google.com/presentation/d/1rWcLLz6ZtpRaLPTHvbJ2VEP9Ll2MgcJyCiK_u2ARrlI/edit?usp=sharing
+
 
 # Assignment details: CPME-252-Project
 This is a group assignment, where you will be part of a team of 3 and create an AI application.  
