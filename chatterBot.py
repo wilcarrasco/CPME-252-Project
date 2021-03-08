@@ -36,8 +36,8 @@ ISSUES = [
     'cd']
 
 END_RESPONSE = [
-    "Ok an automatically generating ticket will be printed, have a great day!",
-    "Sorry to hear that, call the helpdesk then you psycho!"]
+    'ok an automatically generating ticket will be printed, have a great day!',
+    'sorry to hear that, call the help desk then you psycho!']
 
 '''
     Creates and trains a chatbot
